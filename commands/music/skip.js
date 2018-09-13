@@ -36,11 +36,13 @@ class SkipCommand extends commando.Command
         {
             var server = servers[message.guild.id];
             message.channel.send('J\'ai passé le morceau.');
-              .then(connection =>{
-                  var server = servers[message.guild.id];
-                  message.channel.send('J\'ai passé le morceau.');
-                  Play(connection, message);
-              })
+            message.member.voiceChannel.join()
+                .then(connection =>{
+                    var server = servers[message.guild.id];
+                    message.channel.send('Access Granted. Je suis dans ton serveur vocal.');
+                    server.queue.push(args);
+                    Play(connection, message);
+                })
         } else {
             message.channel.send('Je dois être dans un salon vocal pour pouvoir passer le morceau.');
         }
