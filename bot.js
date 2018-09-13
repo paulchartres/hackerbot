@@ -13,4 +13,3 @@ bot.on('ready', () => {
 
 // THIS  MUST  BE  THIS  WAY
 bot.login(process.env.BOT_TOKEN);
-
