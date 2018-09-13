@@ -39,8 +39,6 @@ class SkipCommand extends commando.Command
             message.member.voiceChannel.join()
                 .then(connection =>{
                     var server = servers[message.guild.id];
-                    message.channel.send('Access Granted. Je suis dans ton serveur vocal.');
-                    server.queue.push(args);
                     Play(connection, message);
                 })
         } else {
