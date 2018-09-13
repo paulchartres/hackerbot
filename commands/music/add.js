@@ -15,22 +15,13 @@ class AddCommand extends commando.Command
 
     async run(message, args)
     {
-        if (message.member.voiceChannel)
+        if (message.guild.voiceConnection)
         {
-            if (!message.guild.voiceConnection)
-            {
-                if (!servers[message.guild.id])
-                {
-                    servers[message.guild.id] = {queue: []}
-                }
-                var server = servers[message.guild.id];
-                message.channel.send('Je viens d\'ajouter ça à la liste d\'attente.');
-                server.queue.push(args);
-            }
-        }
-        else
-        {
-            message.channel.send('Tu dois être dans un salon pour que je puisse y hacker mon chemin.');
+            var server = servers[message.guild.id];
+            message.channel.send('Je viens d\'ajouter ça à la liste d\'attente.');
+            server.queue.push(args);
+        } else {
+            message.channel.send('Je dois être dans un salon vocal pour rajouter de la musique à la liste.');
         }
     }
 }
