@@ -16,10 +16,7 @@ class WTFCommand extends commando.Command
     async run(message, args)
     {
         var randomwtf = Math.floor(Math.random() * 20)+1
-        let embed = new Discord.RichEmbed()
-        .setImage('https://www.cykadev.com/neko/reactions/wtf/wtf%20(' + randomwtf + ').jpg')
-        .setColor('#275BF0')
-        message.channel.send(embed)
+        message.channel.send('https://www.cykadev.com/neko/reactions/wtf/wtf%20(' + randomwtf + ').jpg')
     }
 }
 
