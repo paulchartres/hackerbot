@@ -84,7 +84,7 @@ class RateCommand extends commando.Command
       	}
         else if (randomphrase2_proba === 6)
         {
-      		randomphrase2 = 'Peut-être que ça ira à l\'encontre votre avis, mais je suis sûre que '
+      		randomphrase2 = 'Peut-être que ça ira à l\'encontre votre avis, mais je suis sûr que '
       	}
         else if (randomphrase2_proba === 7)
         {
