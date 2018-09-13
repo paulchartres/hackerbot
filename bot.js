@@ -8,8 +8,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'zbeub') {
-    	message.reply('zbeub');
+    if (message.content === '$despacito') {
+    	message.reply('ta gueule.');
   	}
 });
 
