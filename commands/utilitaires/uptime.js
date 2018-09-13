@@ -13,7 +13,7 @@ class UptimeCommand extends commando.Command
     {
         super(client,{
             name: 'uptime',
-            group: 'utilitaires_ppbot',
+            group: 'utilitaires',
             memberName: 'uptime',
             description: 'Puisque je suis en symbiose avec mon processeur 250Hz, je peux te dire depuis combien de temps il tourne.'
         });
