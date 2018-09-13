@@ -16,10 +16,7 @@ class MFCommand extends commando.Command
     async run(message, args)
     {
         var randommf = Math.floor(Math.random() * 15)+1
-        let embed = new Discord.RichEmbed()
-        .setImage('https://www.cykadev.com/neko/reactions/mf/mf%20(' + randommf + ').jpg')
-        .setColor('#275BF0')
-        message.channel.send(embed)
+        message.channel.send(randommf);
     }
 }
 
