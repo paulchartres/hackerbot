@@ -3,7 +3,7 @@ const bot = new Commando.Client();
 
 bot.registry.registerGroup('funny', 'Inutile');
 bot.registry.registerDefaults();
-//bot.registry.registerCommandsIn(__dirname + '/commands');
+bot.registry.registerCommandsIn(__dirname + '/commands');
 
 bot.on('ready', () => {
     console.log('I am ready!');
