@@ -17,6 +17,7 @@ class SayonaraCommand extends commando.Command
 
     async run(message, args)
     {
+        var randomsayonara_nb = Math.floor(Math.random() * randomsayonara.length)
         message.channel.send(randomsayonara[randomsayonara_nb])
         let embed = new Discord.RichEmbed()
         .setImage(randomsayonara[randomsayonara_nb])
