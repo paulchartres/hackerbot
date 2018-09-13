@@ -15,7 +15,7 @@ class AvatarCommand extends commando.Command
 
     async run(message, args)
     {
-        message.channel.send('Voici ton image de profil.' + message.author.avatarURL)
+        message.channel.send('Voici ton image de profil.\n' + message.author.avatarURL)
     }
 }
 
