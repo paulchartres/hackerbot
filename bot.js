@@ -5,6 +5,7 @@ bot.registry.registerGroup('funny', 'Inutile');
 bot.registry.registerGroup('reactions', 'Réactions');
 bot.registry.registerGroup('traduction', 'Traduction');
 bot.registry.registerGroup('music', 'Musique');
+bot.registry.registerGroup('utilitaires', 'Utilitaires');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 
