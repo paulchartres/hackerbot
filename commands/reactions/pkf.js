@@ -16,10 +16,7 @@ class PKFCommand extends commando.Command
     async run(message, args)
     {
         var randompkf = Math.floor(Math.random() * 15)+1
-        let embed = new Discord.RichEmbed()
-        .setImage('https://www.cykadev.com/neko/reactions/pkf/pkf%20(' + randompkf + ').jpg')
-        .setColor('#275BF0')
-        message.channel.send(embed)
+        message.channel.send('https://www.cykadev.com/neko/reactions/pkf/pkf%20(' + randompkf + ').jpg')
     }
 }
 
