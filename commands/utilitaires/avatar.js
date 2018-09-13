@@ -16,10 +16,7 @@ class AvatarCommand extends commando.Command
     async run(message, args)
     {
         message.channel.send('Voici ton image de profil.')
-        let embed = new Discord.RichEmbed()
-        .setImage(message.author.avatarURL)
-        .setColor('#275BF0')
-        message.channel.send(embed)
+        message.channel.send(message.author.avatarURL)
     }
 }
 
