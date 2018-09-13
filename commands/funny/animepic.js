@@ -16,7 +16,10 @@ class AnimePicCommand extends commando.Command
     async run(message, args)
     {
         var randomanime = Math.floor(Math.random() * 100)+1
-        message.channel.send('https://www.cykadev.com/neko/anime/anime%20(' + randomanime + ').jpg')
+        let embed = new Discord.RichEmbed()
+        .setImage('https://www.cykadev.com/neko/anime/anime%20(' + randomanime + ').jpg')
+        .setColor('#275BF0')
+        message.channel.send(embed)
     }
 }
 
