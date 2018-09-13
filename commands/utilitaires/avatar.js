@@ -7,7 +7,7 @@ class AvatarCommand extends commando.Command
     {
         super(client,{
             name: 'avatar',
-            group: 'utilitaires_ppbot',
+            group: 'utilitaires',
             memberName: 'avatar',
             description: 'Je peux hacker les serveurs de Discord pour y récupérer ton avatar et te le donner, le tout en HD.'
         });
