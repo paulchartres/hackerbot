@@ -10,8 +10,8 @@ bot.registry.registerCommandsIn(__dirname + '/commands');
 
 global.servers = {};
 
-bot.on('ready', () => {
-    console.log('I am ready!');
+bot.on('ready', function(){
+    bot.user.setActivity('hacker le FBI').catch(console.error)
 });
 
 // THIS  MUST  BE  THIS  WAY
