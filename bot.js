@@ -3,6 +3,7 @@ const bot = new Commando.Client();
 
 bot.registry.registerGroup('funny', 'Inutile');
 bot.registry.registerGroup('reactions', 'Réactions');
+bot.registry.registerGroup('traduction', 'Traduction');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 
