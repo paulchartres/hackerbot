@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const Commando = require('discord.js-commando);
+const Commando = require('discord.js-commando');
 const client = new Discord.Client();
 const bot = new Commando.Client();
 
