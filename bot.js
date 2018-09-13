@@ -11,9 +11,6 @@ client.on('message', message => {
     if (message.content === 'zbeub') {
     	message.reply('zbeub');
   	}
-    if (message.startsWith(prefix + "despacito")) {
-        message.channel.send("Ta gueule.");
-    }
 });
 
 // THIS  MUST  BE  THIS  WAY
