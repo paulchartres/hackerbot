@@ -4,7 +4,7 @@ const YTDL = require('ytdl-core');
 function Play(connection, message)
 {
     var server = servers[message.guild.id];
-    dispatcher.destroy();
+    server.dipatcher.destroy();
     server.dipatcher = connection.playStream(YTDL(server.queue[0], {filter: "audioonly"}))
     server.queue.shift();
     server.dipatcher.on('end', function(){
