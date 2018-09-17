@@ -34,7 +34,7 @@ class TimerCommand extends commando.Command
 
         if (h_current < 10) {
             message.channel.send("Il reste " + p_10h_h + " heures et " + p_10h_m + " minutes avant la pause de 10h.")
-        } else if (h_current > 10 && h_current < 12) {
+        } else if (h_current >= 10 && h_current < 12) {
             message.channel.send("Il reste " + p_12h_h + " heures et " + p_12h_m + " minutes avant la pause de midi.")
         }
     }
