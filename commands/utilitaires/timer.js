@@ -27,10 +27,10 @@ class TimerCommand extends commando.Command
         var y = 1970 + Math.round(t / years);
 
         var p_10h_h = 9-h_current
-        var p_10h_m = ((10-h_current)*60)-m_current
+        var p_10h_m = ((10-h_current)*60)-m_current-(p_10h_h*60)
 
         var p_12h_h = 11-h_current
-        var p_12h_m = ((12-h_current)*60)-m_current
+        var p_12h_m = ((12-h_current)*60)-m_current-(p_12h_h*60)
 
         if (h_current < 10) {
             message.channel.send("Il reste " + p_10h_h + " heures et " + p_10h_m + " minutes avant la pause de 10h.")
