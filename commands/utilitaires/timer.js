@@ -7,7 +7,7 @@ class TimerCommand extends commando.Command
         super(client,{
             name: 'timer',
             group: 'utilitaires',
-            memberName: 'time',
+            memberName: 'timer',
             description: 'Ce timer te permet de voir combien de temps il reste avant la prochaine pause ou la fin des cours.'
         });
     }
