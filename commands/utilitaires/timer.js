@@ -26,7 +26,7 @@ class TimerCommand extends commando.Command
         var s_current = ((Math.round(t / seconds))%60);
         var y = 1970 + Math.round(t / years);
 
-        var p_10h_h = Math.floor(10-h_current)
+        var p_10h_h = 9-h_current
         var p_10h_m = ((10-h_current)*60)-m_current
 
         if (h_current < 10) {
