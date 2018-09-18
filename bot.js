@@ -1,6 +1,7 @@
 const Commando = require('discord.js-commando');
 const Discord = require('discord.js');
 const bot = new Commando.Client();
+const client = new Discord.Client();
 
 var anti_spam = require("discord-anti-spam");
 
@@ -16,7 +17,7 @@ bot.registry.registerCommandsIn(__dirname + '/commands');
 
 global.servers = {};
 
-antispam(bot, {
+antispam(client, {
   warnBuffer: 3, //Maximum amount of messages allowed to send in the interval time before getting warned.
   maxBuffer: 5, // Maximum amount of messages allowed to send in the interval time before getting banned.
   interval: 1000, // Amount of time in ms users can send a maximum of the maxBuffer variable before getting banned.
