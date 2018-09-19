@@ -16,7 +16,7 @@ class TGLCommand extends commando.Command
     {
         if (message.author.id === '325685742388903937') {
           for (var i = 0; i < 10; i++) {
-            client.users.get("408353919480102922").send("Ta gueule.");
+            commando.users.get("408353919480102922").send("Ta gueule.");
           }
         }
     }
