@@ -14,7 +14,7 @@ class TGCommand extends commando.Command
 
     async run(message, args)
     {
-        message.channel.send('<@325685742388903937>, ta gueule.');
+        message.channel.send('<@325685742388903937>, ta gueule, bouffon.');
     }
 }
 
