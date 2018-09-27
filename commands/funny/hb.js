@@ -18,7 +18,7 @@ class HBCommand extends commando.Command
             case "<@188295851813109760>":
                 message.channel.send("Test");
             default:
-                message.channel.send(message);
+                message.channel.send(args);
         }
     }
 }
