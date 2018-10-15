@@ -15,7 +15,7 @@ class LoliCommand extends commando.Command
 
     async run(message, args)
     {
-        var randomloli = Math.floor(Math.random() * 51)+1
+        var randomloli = Math.floor(Math.random() * 52)+1
         let embed = new Discord.RichEmbed()
         .setImage('https://www.cykadev.com/neko/loli/loli%20(' + randomloli + ').jpg')
         .setColor('#275BF0')
