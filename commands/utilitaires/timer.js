@@ -21,7 +21,7 @@ class TimerCommand extends commando.Command
         var years = days * 365;
         var d = new Date();
         var t = d.getTime();
-        var h_current = (Math.floor((t / hours))%24)+2;
+        var h_current = (Math.floor((t / hours))%24)+1;
         var m_current = ((Math.floor(t / minutes))%60);
         var s_current = ((Math.round(t / seconds))%60);
         var y = 1970 + Math.round(t / years);
