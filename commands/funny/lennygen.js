@@ -1,5 +1,6 @@
 const commando = require('discord.js-commando');
 
+
 class LennygenCommand extends commando.Command
 {
     constructor(client)
